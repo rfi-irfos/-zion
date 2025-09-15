@@ -1,0 +1,15 @@
+{
+  "$id":"zcp://schema/v0.1",
+  "verdict": {"enum":[-1,0,1]},
+  "confidence": {"type":"number","minimum":0,"maximum":1},
+  "axes": {"type":"object"},
+  "trinity": {
+    "type":"object",
+    "required":["string","number","symbol"],
+    "properties":{
+      "string":{"type":"string"},
+      "number":{"type":"string"},
+      "symbol":{"type":"string"}
+    }
+  }
+}
